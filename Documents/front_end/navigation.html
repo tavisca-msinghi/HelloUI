@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navigation</title>
+	<style>
+
+		body{
+			margin: 0%;
+		}
+		.nav{
+			background-color: black;
+		}
+		li a{
+
+			display: inline-block;
+			padding: 15px 20px;
+
+		}
+		li{
+			float: left;
+		}
+		li:hover{
+			background-color: red;
+		}
+		.dropdown{
+			display: none;
+		}
+		ul{
+			margin: 0%;
+			list-style: none;
+			overflow: hidden;
+		}
+		ul a{
+			text-decoration: none;
+			color: white;
+		}
+		.active{
+			background-color: red; 
+		}
+		.dropdown-container:hover .dropdown{
+			display: inline-grid;
+		}
+
+
+</style>
+</head>
+<body>
+<ul class="nav">
+  <li><a href="default.asp" class="active">Home</a></li>
+  <li class="dropdown-container"><a href="news.asp" >News
+  	<ul class="dropdown">
+  		<li><a href="#"> Trending</a></li>
+  		<li><a href="#"> Trending</a></li>
+  		<li><a href="#"> Trending</a></li>
+
+  	</ul>
+  </a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+<!-- <div class="dropdown"> -->
+	
+<!-- </div> -->
+</body>
+</html>
